@@ -1,0 +1,7 @@
+services:
+  moda-market:
+    build: .
+    container_name: moda-market
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
