@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Descubre prendas y accesorios para tu estilo en Moda Market.">
+  <title>Moda Market | Tu estilo, tus reglas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="announcement">NUEVA TEMPORADA · Envíos a todo Chile</div>
+  <header class="site-header">
+    <a class="logo" href="#" aria-label="Moda Market inicio">moda<span>market.</span></a>
+    <nav><a href="#catalogo">Comprar</a><a href="#nosotros">Nosotros</a></nav>
+    <button class="cart-button" id="open-cart" aria-label="Abrir carrito">Bolsa <span id="cart-count">0</span></button>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TU NUEVO LOOK TE ESPERA</p>
+        <h1>Tu estilo.<br><em>Tus reglas.</em></h1>
+        <p>Encuentra esas prendas que se sienten tan bien como se ven. Tendencias para todos tus días.</p>
+        <a class="primary-button" href="#catalogo">Explorar colección <span>↗</span></a>
+      </div>
+      <div class="hero-image"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=85" alt="Amigas mirando prendas en una tienda de ropa"><div class="image-note">NUEVA COLECCIÓN <b>01 / 26</b></div></div>
+    </section>
+    <section class="benefits" aria-label="Beneficios"><div>✳ <span>Estilo para cada día</span></div><div>♡ <span>Selección con cariño</span></div><div>↗ <span>Compra simple y segura*</span></div></section>
+    <section class="catalog" id="catalogo">
+      <div class="section-heading"><div><p class="eyebrow">ENCUENTRA TU FAVORITO</p><h2>Lo que te va a encantar</h2></div><p>Prendas versátiles para armar tu propio estilo.</p></div>
+      <div class="toolbar"><div class="categories" id="categories"><button class="category active" data-category="Todos">Todo</button><button class="category" data-category="Poleras">Poleras</button><button class="category" data-category="Chaquetas">Chaquetas</button><button class="category" data-category="Pantalones">Pantalones</button><button class="category" data-category="Vestidos">Vestidos</button><button class="category" data-category="Polerones">Polerones</button><button class="category" data-category="Calzado">Calzado</button><button class="category" data-category="Accesorios">Accesorios</button></div><input id="search" type="search" placeholder="Buscar prendas..." aria-label="Buscar prendas"></div>
+      <div class="product-grid" id="products"><p>Cargando productos...</p></div>
+    </section>
+    <section class="newsletter" id="nosotros"><p class="eyebrow">HOLA, AMANTE DE LA MODA</p><h2>El estilo es tuyo.<br>La inspiración también.</h2><p>Una tienda demo para descubrir ideas, combinar prendas y encontrar tu próxima favorita.</p><a href="#catalogo" class="text-link">Descubrir productos ↗</a></section>
+  </main>
+  <footer><a class="logo" href="#">moda<span>market.</span></a><p>Proyecto demostrativo de tienda online.</p><small>*Esta versión no procesa pagos reales ni almacena pedidos.</small></footer>
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-head"><h2>Tu bolsa</h2><button id="close-cart" aria-label="Cerrar carrito">✕</button></div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-bottom"><div class="total-line"><span>Total estimado</span><strong id="cart-total">$0</strong></div><button class="primary-button checkout" id="checkout">Finalizar pedido demo ↗</button><p class="fine-print">Demostración: no se realiza ningún cobro.</p></div>
+  </aside>
+  <div class="modal-backdrop" id="checkout-modal" hidden><form id="checkout-form" class="checkout-modal"><button type="button" class="modal-close" id="close-modal" aria-label="Cerrar">✕</button><p class="eyebrow">CASI LISTO</p><h2>Datos de entrega</h2><label>Nombre completo<input name="name" required autocomplete="name"></label><label>Correo electrónico<input name="email" type="email" required autocomplete="email"></label><label>Comuna / dirección<input name="address" required autocomplete="street-address"></label><button class="primary-button" type="submit">Confirmar pedido demo ↗</button><p id="checkout-message" role="status"></p></form></div>
+  <script src="/app.js"></script>
+</body>
+</html>
