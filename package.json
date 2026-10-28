@@ -1,0 +1,13 @@
+{
+  "name": "moda-market",
+  "version": "1.0.0",
+  "description": "Tienda demo de ropa online con Node.js y Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
